@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-      title: '呆萌管理系统',
+      title: 'IUIGA后台管理系统',
       logo: logoImg
     }
   }

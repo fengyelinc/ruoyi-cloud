@@ -10,6 +10,6 @@ RUN mkdir -p /home/ruoyi
 # 指定路径
 WORKDIR /home/ruoyi
 # 复制jar文件到路径
-COPY ./jar/demo-auth.jar /home/ruoyi/demo-auth.jar
+COPY ./jar/iuiga-auth.jar /home/ruoyi/iuiga-auth.jar
 # 启动认证服务
-ENTRYPOINT ["java","-jar","demo-auth.jar"]
+ENTRYPOINT ["java","-jar","iuiga-auth.jar"]

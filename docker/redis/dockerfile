@@ -1,13 +1,13 @@
 # 基础镜像
 FROM redis
 # author
-MAINTAINER demo
+MAINTAINER iuiga
 
 # 挂载目录
-VOLUME /home/demo/redis
+VOLUME /home/iuiga/redis
 # 创建目录
-RUN mkdir -p /home/demo/redis
+RUN mkdir -p /home/iuiga/redis
 # 指定路径
-WORKDIR /home/demo/redis
+WORKDIR /home/iuiga/redis
 # 复制conf文件到路径
-COPY ./conf/redis.conf /home/demo/redis/redis.conf
+COPY ./conf/redis.conf /home/iuiga/redis/redis.conf

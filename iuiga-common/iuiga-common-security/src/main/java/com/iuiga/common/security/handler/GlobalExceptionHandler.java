@@ -9,7 +9,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import com.iuiga.common.core.constant.HttpStatus;
-import com.iuiga.common.core.exception.DemoModeException;
+import com.iuiga.common.core.exception.IuigaModeException;
 import com.iuiga.common.core.exception.InnerAuthException;
 import com.iuiga.common.core.exception.ServiceException;
 import com.iuiga.common.core.exception.auth.NotPermissionException;
@@ -128,8 +128,8 @@ public class GlobalExceptionHandler
     /**
      * 演示模式异常
      */
-    @ExceptionHandler(DemoModeException.class)
-    public AjaxResult handleDemoModeException(DemoModeException e)
+    @ExceptionHandler(IuigaModeException.class)
+    public AjaxResult handleIuigaModeException(IuigaModeException e)
     {
         return AjaxResult.error("演示模式，不允许操作");
     }

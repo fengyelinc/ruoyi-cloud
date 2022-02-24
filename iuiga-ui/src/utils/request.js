@@ -3,7 +3,7 @@ import { Notification, MessageBox, Message, Loading } from 'element-ui'
 import store from '@/store'
 import { getToken } from '@/utils/auth'
 import errorCode from '@/utils/errorCode'
-import { tansParams, blobValidate } from "@/utils/demo";
+import { tansParams, blobValidate } from "@/utils/iuiga";
 import cache from '@/plugins/cache'
 import { saveAs } from 'file-saver'
 

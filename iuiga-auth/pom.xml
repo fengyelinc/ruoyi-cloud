@@ -11,7 +11,7 @@
     <artifactId>iuiga-auth</artifactId>
 	
     <description>
-        demo-auth认证授权中心
+        iuiga-auth认证授权中心
     </description>
     
     <dependencies>
@@ -46,7 +46,7 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 		
-        <!-- Demo Common Security-->
+        <!-- Iuiga Common Security-->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-security</artifactId>

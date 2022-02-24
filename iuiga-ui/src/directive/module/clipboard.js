@@ -1,6 +1,6 @@
 /**
 * v-clipboard 文字复制剪贴
-* Copyright (c) 2021 demo
+* Copyright (c) 2021 iuiga
 */
 
 import Clipboard from 'clipboard'

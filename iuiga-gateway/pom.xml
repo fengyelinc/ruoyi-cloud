@@ -11,7 +11,7 @@
     <artifactId>iuiga-gateway</artifactId>
 
     <description>
-        demo-gateway网关模块
+        iuiga-gateway网关模块
     </description>
 
     <dependencies>
@@ -64,7 +64,7 @@
             <artifactId>kaptcha</artifactId>
         </dependency>
 
-        <!-- Demo Common Redis-->
+        <!-- Iuiga Common Redis-->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-redis</artifactId>

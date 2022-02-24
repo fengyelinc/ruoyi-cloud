@@ -2,10 +2,10 @@
 
 ```bash
 # 克隆项目
-git clone https://gitee.com/y_project/Demo-Vue
+git clone https://gitee.com/y_project/Iuiga-Vue
 
 # 进入项目目录
-cd demo-ui
+cd iuiga-ui
 
 # 安装依赖
 npm install

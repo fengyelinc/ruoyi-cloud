@@ -12,12 +12,12 @@
     <artifactId>iuiga-api-system</artifactId>
 
     <description>
-        demo-api-system系统接口模块
+        iuiga-api-system系统接口模块
     </description>
 
     <dependencies>
 		
-        <!-- Demo Common Core-->
+        <!-- Iuiga Common Core-->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-core</artifactId>

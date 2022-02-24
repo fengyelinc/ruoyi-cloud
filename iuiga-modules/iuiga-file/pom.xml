@@ -54,13 +54,13 @@
             <version>${minio.version}</version>
         </dependency>
         
-        <!-- Demo Api System -->
+        <!-- Iuiga Api System -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-api-system</artifactId>
         </dependency>
         
-        <!-- Demo Common Swagger -->
+        <!-- Iuiga Common Swagger -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-swagger</artifactId>

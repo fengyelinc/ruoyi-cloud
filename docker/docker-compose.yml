@@ -1,7 +1,7 @@
 version : '3.8'
 services:
-  demo-nacos:
-    container_name: demo-nacos
+  iuiga-nacos:
+    container_name: iuiga-nacos
     image: nacos/nacos-server
     build:
       context: ./nacos
@@ -15,9 +15,9 @@ services:
       - "9848:9848"
       - "9849:9849"
     depends_on:
-      - demo-mysql
-  demo-mq:
-    container_name: demo-mq
+      - iuiga-mysql
+  iuiga-mq:
+    container_name: iuiga-mq
     image: rabbitmq:3.9.13-management
     environment:
       - RABBITMQ_DEFAULT_USER=admin
@@ -31,8 +31,8 @@ services:
       - "15672:15672"
       - "15674:15674"
       - "15675:15675"
-  demo-mysql:
-    container_name: demo-mysql
+  iuiga-mysql:
+    container_name: iuiga-mysql
     image: mysql:5.7
     build:
       context: ./mysql
@@ -53,103 +53,103 @@ services:
     environment:
       MYSQL_DATABASE: 'ry-cloud'
       MYSQL_ROOT_PASSWORD: password
-  demo-redis:
-    container_name: demo-redis
+  iuiga-redis:
+    container_name: iuiga-redis
     image: redis
     build:
       context: ./redis
     ports:
       - "6379:6379"
     volumes:
-      - ./redis/conf/redis.conf:/home/demo/redis/redis.conf
+      - ./redis/conf/redis.conf:/home/iuiga/redis/redis.conf
       - ./redis/data:/data
-    command: redis-server /home/demo/redis/redis.conf
-  demo-nginx:
-    container_name: demo-nginx
+    command: redis-server /home/iuiga/redis/redis.conf
+  iuiga-nginx:
+    container_name: iuiga-nginx
     image: nginx
     build:
       context: ./nginx
     ports:
       - "80:80"
     volumes:
-      - ./nginx/html/dist:/home/demo/projects/demo-ui
+      - ./nginx/html/dist:/home/iuiga/projects/iuiga-ui
       - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/logs:/var/log/nginx
       - ./nginx/conf.d:/etc/nginx/conf.d
     depends_on:
-      - demo-gateway
+      - iuiga-gateway
     links:
-      - demo-gateway
-  demo-gateway:
-    container_name: demo-gateway
+      - iuiga-gateway
+  iuiga-gateway:
+    container_name: iuiga-gateway
     build:
-      context: ./demo/gateway
+      context: ./iuiga/gateway
       dockerfile: dockerfile
     ports:
       - "8080:8080"
     depends_on:
-      - demo-redis
+      - iuiga-redis
     links:
-      - demo-redis
-  demo-auth:
-    container_name: demo-auth
+      - iuiga-redis
+  iuiga-auth:
+    container_name: iuiga-auth
     build:
-      context: ./demo/auth
+      context: ./iuiga/auth
       dockerfile: dockerfile
     ports:
       - "9200:9200"
     depends_on:
-      - demo-redis
+      - iuiga-redis
     links:
-      - demo-redis
+      - iuiga-redis
   iuiga-modules-system:
     container_name: iuiga-modules-system
     build:
-      context: ./demo/modules/system
+      context: ./iuiga/modules/system
       dockerfile: dockerfile
     ports:
       - "9201:9201"
     depends_on:
-      - demo-redis
-      - demo-mysql
+      - iuiga-redis
+      - iuiga-mysql
     links:
-      - demo-redis
-      - demo-mysql
+      - iuiga-redis
+      - iuiga-mysql
   iuiga-modules-gen:
     container_name: iuiga-modules-gen
     build:
-      context: ./demo/modules/gen
+      context: ./iuiga/modules/gen
       dockerfile: dockerfile
     ports:
       - "9202:9202"
     depends_on:
-      - demo-mysql
+      - iuiga-mysql
     links:
-      - demo-mysql
+      - iuiga-mysql
   iuiga-modules-job:
     container_name: iuiga-modules-job
     build:
-      context: ./demo/modules/job
+      context: ./iuiga/modules/job
       dockerfile: dockerfile
     ports:
       - "9203:9203"
     depends_on:
-      - demo-mysql
+      - iuiga-mysql
     links:
-      - demo-mysql
+      - iuiga-mysql
   iuiga-modules-file:
     container_name: iuiga-modules-file
     build:
-      context: ./demo/modules/file
+      context: ./iuiga/modules/file
       dockerfile: dockerfile
     ports:
       - "9300:9300"
     volumes:
-    - ./demo/uploadPath:/home/demo/uploadPath
-  demo-visual-monitor:
-    container_name: demo-visual-monitor
+    - ./iuiga/uploadPath:/home/iuiga/uploadPath
+  iuiga-visual-monitor:
+    container_name: iuiga-visual-monitor
     build:
-      context: ./demo/visual/monitor
+      context: ./iuiga/visual/monitor
       dockerfile: dockerfile
     ports:
       - "9100:9100"

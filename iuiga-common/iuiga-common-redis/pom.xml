@@ -23,7 +23,7 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         
-        <!-- Demo Common Core-->
+        <!-- Iuiga Common Core-->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-core</artifactId>

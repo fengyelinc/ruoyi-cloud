@@ -66,13 +66,13 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         
-        <!-- Demo Common Log -->
+        <!-- Iuiga Common Log -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-log</artifactId>
         </dependency>
         
-        <!-- Demo Common Swagger -->
+        <!-- Iuiga Common Swagger -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-swagger</artifactId>

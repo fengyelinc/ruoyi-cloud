@@ -22,13 +22,13 @@
             <artifactId>spring-webmvc</artifactId>
         </dependency>
 
-        <!-- Demo Api System -->
+        <!-- Iuiga Api System -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-api-system</artifactId>
         </dependency>
 
-        <!-- Demo Common Redis-->
+        <!-- Iuiga Common Redis-->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-redis</artifactId>

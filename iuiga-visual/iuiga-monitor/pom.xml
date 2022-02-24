@@ -11,7 +11,7 @@
     <artifactId>iuiga-visual-monitor</artifactId>
 
     <description>
-        demo-visual-monitor监控中心
+        iuiga-visual-monitor监控中心
     </description>
 
     <dependencies>

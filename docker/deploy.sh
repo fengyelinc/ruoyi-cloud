@@ -26,12 +26,12 @@ port(){
 
 # 启动基础环境（必须）
 base(){
-	docker-compose up -d demo-mysql demo-redis demo-nacos
+	docker-compose up -d iuiga-mysql iuiga-redis iuiga-nacos
 }
 
 # 启动程序模块（必须）
 modules(){
-	docker-compose up -d demo-nginx demo-gateway demo-auth iuiga-modules-system
+	docker-compose up -d iuiga-nginx iuiga-gateway iuiga-auth iuiga-modules-system
 }
 
 # 关闭所有环境/模块

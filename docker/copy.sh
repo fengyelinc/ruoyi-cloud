@@ -9,33 +9,33 @@ usage() {
 
 # copy sql
 echo "begin copy sql "
-cp ../sql/demo_20210908.sql ./mysql/db
-cp ../sql/demo_config_20211118.sql ./mysql/db
+cp ../sql/iuiga_20210908.sql ./mysql/db
+cp ../sql/iuiga_config_20211118.sql ./mysql/db
 
 # copy html
 echo "begin copy html "
-cp -r ../demo-ui/dist/** ./nginx/html/dist
+cp -r ../iuiga-ui/dist/** ./nginx/html/dist
 
 
 # copy jar
-echo "begin copy demo-gateway "
-cp ../demo-gateway/target/demo-gateway.jar ./demo/gateway/jar
+echo "begin copy iuiga-gateway "
+cp ../iuiga-gateway/target/iuiga-gateway.jar ./iuiga/gateway/jar
 
-echo "begin copy demo-auth "
-cp ../demo-auth/target/demo-auth.jar ./demo/auth/jar
+echo "begin copy iuiga-auth "
+cp ../iuiga-auth/target/iuiga-auth.jar ./iuiga/auth/jar
 
-echo "begin copy demo-visual "
-cp ../demo-visual/demo-monitor/target/demo-visual-monitor.jar  ./demo/visual/monitor/jar
+echo "begin copy iuiga-visual "
+cp ../iuiga-visual/iuiga-monitor/target/iuiga-visual-monitor.jar  ./iuiga/visual/monitor/jar
 
 echo "begin copy iuiga-modules-system "
-cp ../iuiga-modules/demo-system/target/iuiga-modules-system.jar ./demo/modules/system/jar
+cp ../iuiga-modules/iuiga-system/target/iuiga-modules-system.jar ./iuiga/modules/system/jar
 
 echo "begin copy iuiga-modules-file "
-cp ../iuiga-modules/demo-file/target/iuiga-modules-file.jar ./demo/modules/file/jar
+cp ../iuiga-modules/iuiga-file/target/iuiga-modules-file.jar ./iuiga/modules/file/jar
 
 echo "begin copy iuiga-modules-job "
-cp ../iuiga-modules/demo-job/target/iuiga-modules-job.jar ./demo/modules/job/jar
+cp ../iuiga-modules/iuiga-job/target/iuiga-modules-job.jar ./iuiga/modules/job/jar
 
 echo "begin copy iuiga-modules-gen "
-cp ../iuiga-modules/demo-gen/target/iuiga-modules-gen.jar ./demo/modules/gen/jar
+cp ../iuiga-modules/iuiga-gen/target/iuiga-modules-gen.jar ./iuiga/modules/gen/jar
 

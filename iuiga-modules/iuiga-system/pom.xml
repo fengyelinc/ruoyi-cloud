@@ -54,31 +54,31 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
         
-        <!-- Demo Common DataSource -->
+        <!-- Iuiga Common DataSource -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-datasource</artifactId>
         </dependency>
         
-        <!-- Demo Common DataScope -->
+        <!-- Iuiga Common DataScope -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-datascope</artifactId>
         </dependency>
         
-        <!-- Demo Common Log -->
+        <!-- Iuiga Common Log -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-log</artifactId>
         </dependency>
         
-        <!-- Demo Common Swagger -->
+        <!-- Iuiga Common Swagger -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-swagger</artifactId>
         </dependency>
 
-        <!-- Demo Common MQ -->
+        <!-- Iuiga Common MQ -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-mq</artifactId>

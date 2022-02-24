@@ -1,8 +1,8 @@
  /**
  * v-hasPermi 操作权限处理
- * Copyright (c) 2019 demo
+ * Copyright (c) 2019 iuiga
  */
- 
+
 import store from '@/store'
 
 export default {

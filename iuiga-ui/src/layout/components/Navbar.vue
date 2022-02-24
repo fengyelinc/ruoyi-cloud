@@ -10,11 +10,11 @@
         <search id="header-search" class="right-menu-item" />
 
         <el-tooltip content="源码地址" effect="dark" placement="bottom">
-          <demo-git id="demo-git" class="right-menu-item hover-effect" />
+          <iuiga-git id="iuiga-git" class="right-menu-item hover-effect" />
         </el-tooltip>
 
         <el-tooltip content="文档地址" effect="dark" placement="bottom">
-          <demo-doc id="demo-doc" class="right-menu-item hover-effect" />
+          <iuiga-doc id="iuiga-doc" class="right-menu-item hover-effect" />
         </el-tooltip>
 
         <screenfull id="screenfull" class="right-menu-item hover-effect" />
@@ -54,8 +54,8 @@ import Hamburger from '@/components/Hamburger'
 import Screenfull from '@/components/Screenfull'
 import SizeSelect from '@/components/SizeSelect'
 import Search from '@/components/HeaderSearch'
-import DemoGit from '@/components/Demo/Git'
-import DemoDoc from '@/components/Demo/Doc'
+import IuigaGit from '@/components/Iuiga/Git'
+import IuigaDoc from '@/components/Iuiga/Doc'
 
 export default {
   components: {
@@ -65,8 +65,8 @@ export default {
     Screenfull,
     SizeSelect,
     Search,
-    DemoGit,
-    DemoDoc
+    IuigaGit,
+    IuigaDoc
   },
   computed: {
     ...mapGetters([

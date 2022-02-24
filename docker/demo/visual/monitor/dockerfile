@@ -10,6 +10,6 @@ RUN mkdir -p /home/ruoyi
 # 指定路径
 WORKDIR /home/ruoyi
 # 复制jar文件到路径
-COPY ./jar/demo-visual-monitor.jar /home/ruoyi/demo-visual-monitor.jar
+COPY ./jar/iuiga-visual-monitor.jar /home/ruoyi/iuiga-visual-monitor.jar
 # 启动系统服务
-ENTRYPOINT ["java","-jar","demo-visual-monitor.jar"]
+ENTRYPOINT ["java","-jar","iuiga-visual-monitor.jar"]

@@ -17,7 +17,7 @@
 
     <dependencies>
 		
-        <!-- Demo Common Security -->
+        <!-- Iuiga Common Security -->
         <dependency>
             <groupId>com.iuiga</groupId>
             <artifactId>iuiga-common-security</artifactId>

@@ -1,11 +1,11 @@
-DROP DATABASE IF EXISTS `demo-seata`;
+DROP DATABASE IF EXISTS `iuiga-seata`;
 
-CREATE DATABASE  `demo-seata` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
+CREATE DATABASE  `iuiga-seata` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
-USE `demo-seata`;
+USE `iuiga-seata`;
 
 -- -------------------------------- The script used when storeMode is 'db' --------------------------------
 -- the table to store GlobalSession data

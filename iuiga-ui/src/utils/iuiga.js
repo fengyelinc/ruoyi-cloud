@@ -2,7 +2,7 @@
 
 /**
  * 通用js方法封装处理
- * Copyright (c) 2019 demo
+ * Copyright (c) 2019 iuiga
  */
 
 // 日期格式化
@@ -68,7 +68,7 @@ export function addDateRange(params, dateRange, propName) {
   return search;
 }
 
-// 回显数据字典 
+// 回显数据字典
 export function selectDictLabel(datas, value) {
   var actions = [];
   Object.keys(datas).some((key) => {

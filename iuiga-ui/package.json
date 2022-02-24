@@ -1,8 +1,8 @@
 {
-  "name": "demo",
+  "name": "iuiga",
   "version": "1.0.0",
-  "description": "呆萌管理系统",
-  "author": "呆萌",
+  "description": "IUIGA后台管理系统",
+  "author": "IUIGA",
   "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -33,7 +33,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://gitee.com/y_project/Demo-Cloud.git"
+    "url": "https://gitee.com/y_project/Iuiga-Cloud.git"
   },
   "dependencies": {
     "@riophae/vue-treeselect": "0.4.0",
