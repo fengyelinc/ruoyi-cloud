@@ -1,0 +1,2 @@
+org.springframework.boot.env.EnvironmentPostProcessor=\
+    com.iuiga.common.datasource.env.ApplicationSeataInitializer

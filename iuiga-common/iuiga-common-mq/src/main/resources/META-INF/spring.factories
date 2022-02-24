@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.iuiga.common.mq.configure.RabbitConfig,\
+  com.iuiga.common.mq.utils.RabbitUtil
+
+
