@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>iuiga-modules</artifactId>
+        <groupId>com.iuiga</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>iuiga-modules-srs</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.huaweicloud</groupId>
+            <artifactId>esdk-obs-java-bundle</artifactId>
+        </dependency>
+
+
+        <!-- SpringCloud Alibaba Nacos -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- SpringCloud Alibaba Nacos Config -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- SpringCloud Alibaba Sentinel -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+
+        <!-- SpringBoot Actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- Swagger UI -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.fox.version}</version>
+        </dependency>
+
+        <!-- Mysql Connector -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- Iuiga Common DataSource -->
+        <dependency>
+            <groupId>com.iuiga</groupId>
+            <artifactId>iuiga-common-datasource</artifactId>
+        </dependency>
+
+        <!-- Iuiga Common DataScope -->
+        <dependency>
+            <groupId>com.iuiga</groupId>
+            <artifactId>iuiga-common-datascope</artifactId>
+        </dependency>
+
+        <!-- Iuiga Common Log -->
+        <dependency>
+            <groupId>com.iuiga</groupId>
+            <artifactId>iuiga-common-log</artifactId>
+        </dependency>
+
+        <!-- Iuiga Common Swagger -->
+        <dependency>
+            <groupId>com.iuiga</groupId>
+            <artifactId>iuiga-common-swagger</artifactId>
+        </dependency>
+
+        <!-- Iuiga Common MQ -->
+        <dependency>
+            <groupId>com.iuiga</groupId>
+            <artifactId>iuiga-common-mq</artifactId>
+        </dependency>
+
+        <!-- Mybatis-plus -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+</project>

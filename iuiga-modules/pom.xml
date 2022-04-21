@@ -12,6 +12,7 @@
         <module>iuiga-system</module>
         <module>iuiga-job</module>
         <module>iuiga-file</module>
+        <module>iuiga-srs</module>
     </modules>
 
     <artifactId>iuiga-modules</artifactId>
