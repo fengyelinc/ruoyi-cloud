@@ -10,10 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>iuiga-common-core</artifactId>
-    
-    <description>
-        iuiga-common-core核心模块
-    </description>
+
+    <properties>
+
+    </properties>
 
     <dependencies>
 
@@ -123,6 +123,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <!-- huTool 工具类库-->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
         </dependency>
 
     </dependencies>

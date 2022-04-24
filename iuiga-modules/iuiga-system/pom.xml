@@ -84,11 +84,22 @@
             <artifactId>iuiga-common-mq</artifactId>
         </dependency>
 
+        <!-- Iuiga Common socket -->
+        <dependency>
+            <groupId>com.iuiga</groupId>
+            <artifactId>iuiga-common-socket</artifactId>
+        </dependency>
+
         <!-- Mybatis-plus -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-websocket</artifactId>-->
+<!--        </dependency>-->
 
     </dependencies>
 

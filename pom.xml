@@ -42,6 +42,8 @@
         <amqp-client.version>2.5.6</amqp-client.version>
         <lombok.version>1.18.20</lombok.version>
         <esdk-obs.version>3.21.8</esdk-obs.version>
+        <netty.version>4.1.67.Final</netty.version>
+        <hutool-all.version>5.7.16</hutool-all.version>
     </properties>
 
     <!-- 依赖声明 -->
@@ -262,6 +264,13 @@
                 <version>${iuiga.version}</version>
             </dependency>
 
+            <!-- socket -->
+            <dependency>
+                <groupId>com.iuiga</groupId>
+                <artifactId>iuiga-common-socket</artifactId>
+                <version>${iuiga.version}</version>
+            </dependency>
+
             <!-- 系统接口 -->
             <dependency>
                 <groupId>com.iuiga</groupId>
@@ -274,6 +283,13 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-amqp</artifactId>
                 <version>${amqp-client.version}</version>
+            </dependency>
+
+            <!-- huTool 工具类库-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool-all.version}</version>
             </dependency>
 
             <dependency>

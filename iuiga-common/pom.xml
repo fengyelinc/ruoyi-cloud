@@ -16,6 +16,7 @@
         <module>iuiga-common-security</module>
         <module>iuiga-common-datascope</module>
 		<module>iuiga-common-datasource</module>
+        <module>iuiga-common-socket</module>
         <module>iuiga-common-mq</module>
     </modules>
 
