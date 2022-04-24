@@ -1,4 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.xueyi.common.socket.autoconfigure.NettyWebSocketAutoConfigure,\
-    com.xueyi.common.socket.config.ConfigureConfig,\
-    com.xueyi.common.socket.config.SocketConfig
+    com.iuiga.common.socket.autoconfigure.NettyWebSocketAutoConfigure,\
+    com.iuiga.common.socket.config.ConfigureConfig,\
+    com.iuiga.common.socket.config.SocketConfig

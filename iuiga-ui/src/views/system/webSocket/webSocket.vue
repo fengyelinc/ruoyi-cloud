@@ -59,7 +59,7 @@ export default {
       if ('WebSocket' in window) {
         // this.websock = new WebSocket('ws://192.168.0.142/dev-api/webSocket')
         // this.websock = new WebSocket('ws://localhost:8080/system/websocket')
-        this.websock = new WebSocket('ws://192.168.0.142:9201/websocket')
+        this.websock = new WebSocket('ws://localhost:9211/webSocket2?req=ok&user=admin')
         // this.websock = new WebSocket('wss://skynet.mumutong.cn/export/kols')
         this.websock.onmessage = this.websocketonmessage
         this.websock.onopen = this.websocketonopen
